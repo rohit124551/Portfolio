@@ -4,7 +4,7 @@ import { Award } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
     {
-      title: 'Red Hat System Administration II (RH134 - RHA) - Ver. 8.2',
+      title: 'Red Hat System Administration II (RH134 - RHA)',
       issuer: 'Red Hat — Certificate Link',
       date: 'September 2025',
       type: 'VERIFIED',
@@ -12,12 +12,36 @@ const Certifications = () => {
       img: '/cert-rh134.jpg'
     },
     {
-      title: 'Red Hat System Administration I (RH124 - RHA) - Ver. 8.2',
+      title: 'Red Hat System Administration I (RH124 - RHA)',
       issuer: 'Google — Certificate Link',
       date: 'September 2025',
       type: 'VERIFIED',
       color: 'var(--color-neon-cyan)',
       img: '/cert-rh124.jpg'
+    },
+    {
+      title: 'CyberSec Symposium 2.0 (Conference Participation)',
+      issuer: 'LPU School of Computer Science Engineering',
+      date: 'April 2024',
+      type: 'VERIFIED',
+      color: 'var(--color-neon-cyan)',
+      img: '/cert-cybersec-2.0.jpg'
+    },
+    {
+      title: 'Republic of Cyber Sentinels CTF (RCSCTF24)',
+      issuer: 'LPU School of Computer Science Engineering',
+      date: 'March 2024',
+      type: 'VERIFIED',
+      color: 'var(--color-neon-pink)',
+      img: '/cert-rcsetf24.jpg'
+    },
+    {
+      title: 'Cyber Sec Symposium: 12-Hour CTF Challenge',
+      issuer: 'LPU School of Computer Science Engineering',
+      date: 'September 2023',
+      type: 'VERIFIED',
+      color: 'var(--color-neon-yellow)',
+      img: '/cert-ctf-12h.jpg'
     }
   ];
 
