@@ -50,7 +50,15 @@
 ::-webkit-scrollbar-thumb { background: var(--color-neon-purple); border-radius: 0; }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-neon-cyan); }
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 @layer utilities {
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
   .cyber-glow-cyan {
     box-shadow: 0 0 10px rgba(0, 240, 255, 0.8), inset 0 0 10px rgba(0, 240, 255, 0.3);
   }
@@ -94,13 +102,13 @@
   .glitch::before {
     left: 2px;
     text-shadow: -2px 0 var(--color-neon-pink);
-    clip: rect(44px, 450px, 56px, 0);
+    clip: rect(44px, 9999px, 56px, 0);
     animation: glitch-anim 5s infinite linear alternate-reverse;
   }
   .glitch::after {
     left: -2px;
     text-shadow: -2px 0 var(--color-neon-cyan);
-    clip: rect(44px, 450px, 56px, 0);
+    clip: rect(44px, 9999px, 56px, 0);
     animation: glitch-anim2 5s infinite linear alternate-reverse;
   }
 }

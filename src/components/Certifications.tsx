@@ -13,7 +13,7 @@ const Certifications = () => {
     },
     {
       title: 'Red Hat System Administration I (RH124 - RHA)',
-      issuer: 'Google — Certificate Link',
+      issuer: 'Red Hat — Certificate Link',
       date: 'September 2025',
       type: 'VERIFIED',
       color: 'var(--color-neon-cyan)',
@@ -65,7 +65,7 @@ const Certifications = () => {
             VERIFIED CLEARANCES
           </div>
           <h2 className="text-5xl lg:text-7xl font-display font-black text-white tracking-tighter uppercase">
-            SECURE <span className="text-[var(--color-neon-yellow)]">PROOFS</span>
+            CERTIF<span className="text-[var(--color-neon-yellow)]">ICATES</span>
           </h2>
         </motion.div>
 

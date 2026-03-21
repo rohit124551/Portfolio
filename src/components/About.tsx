@@ -34,11 +34,11 @@ const About = () => {
           {/* Left Panel: Profile Node */}
           <div className="lg:w-1/3 flex flex-col items-center justify-center p-8 lg:p-12 border-b lg:border-b-0 lg:border-r border-[#00ff41]/50 relative">
              {/* Subtle internal glow */}
-             <div className="absolute inset-0 bg-[#00ff41]/5 blur-3xl rounded-full"></div>
+             <div className="absolute inset-0 bg-[#00ff41]/5 blur-3xl rounded-full pointer-events-none"></div>
 
              {/* Hexagon Profile Pic */}
              <div className="relative w-48 h-48 mb-8">
-               <div className="absolute inset-0 bg-[#00ff41] blur-md opacity-20 animate-pulse"></div>
+               <div className="absolute inset-0 bg-[#00ff41] blur-md opacity-20 animate-pulse pointer-events-none"></div>
                <div className="absolute inset-0 flex items-center justify-center" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'}}>
                   <img src="/cyber-avatar.png" alt="Rohit - Cyber Avatar" className="w-full h-full object-cover" />
                </div>
@@ -85,7 +85,7 @@ const About = () => {
              </div>
 
              {/* Download Resume Button Matrix Style */}
-             <a href="/RohitCV.pdf" download className="w-full flex items-center justify-center gap-3 py-4 border border-[#00ff41] text-[#00ff41] font-mono tracking-widest text-sm hover:bg-[#00ff41] hover:text-black transition-all hover:shadow-[0_0_20px_#00ff41] group">
+             <a href="#" download className="w-full flex items-center justify-center gap-3 py-4 border border-[#00ff41] text-[#00ff41] font-mono tracking-widest text-sm hover:bg-[#00ff41] hover:text-black transition-all hover:shadow-[0_0_20px_#00ff41] group">
                <Download className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
                DOWNLOAD RESUME
              </a>
@@ -142,7 +142,7 @@ const About = () => {
                       <div>
                         <div className="text-[#00ff41] font-bold text-sm mb-1 line-clamp-1">BTech_CSE.deg</div>
                         <div className="text-xs text-gray-400">Lovely Professional Univ.</div>
-                        <div className="text-xs text-[#2094f3] mt-2">CGPA: 5.60 | Since 2023</div>
+                        <div className="text-xs text-[#2094f3] mt-2">CGPA: 5.85 | Since 2023</div>
                       </div>
                     </div>
                     {/* File Block 2 */}
@@ -161,7 +161,7 @@ const About = () => {
                <div className="flex items-center gap-2 mt-4">
                  <span className="text-[#00ff41] font-bold">➜</span>
                  <span className="text-[#2094f3] font-bold">~</span>
-                 <span className="w-2.5 h-5 bg-[#00ff41] ml-2 animate-pulse"></span>
+                 <span className="w-2.5 h-5 bg-[#00ff41] ml-2 animate-blink"></span>
                </div>
 
              </div>

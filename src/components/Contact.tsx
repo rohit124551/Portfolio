@@ -39,7 +39,7 @@ const Contact = () => {
              <div className="absolute -left-10 top-0 bottom-0 w-px bg-gradient-to-b from-[var(--color-neon-pink)] via-transparent to-[var(--color-neon-cyan)] hidden lg:block opacity-50"></div>
 
              {[
-               { icon: <Mail className="w-5 h-5"/>, label: 'EMAIL PROTOCOL', value: 'rohit124551@gmail.com', href: 'mailto:rohit124551@gmail.com', color: "var(--color-neon-pink)" },
+               { icon: <Mail className="w-5 h-5"/>, label: 'EMAIL PROTOCOL', value: 'hello@rohitkumarranjan.xyz', href: 'mailto:hello@rohitkumarranjan.xyz', color: "var(--color-neon-pink)" },
                { icon: <Linkedin className="w-5 h-5"/>, label: 'LINKED_IN NODE', value: 'rohitkumarranjan', href: 'https://linkedin.com/in/rohitkumarranjan/', color: "var(--color-neon-cyan)" },
                { icon: <Github className="w-5 h-5"/>, label: 'GITHUB REPO', value: 'rohit124551', href: 'https://github.com/rohit124551', color: "var(--color-neon-yellow)" },
                { icon: <MapPin className="w-5 h-5"/>, label: 'PHYSICAL NODE', value: 'Ahmedabad, Gujarat, India',  color: "var(--color-neon-purple)" }
