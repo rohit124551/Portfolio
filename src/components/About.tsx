@@ -1,5 +1,71 @@
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Cpu, Terminal, Github, Linkedin, Mail, Download, FileText, FileBadge } from 'lucide-react';
+import { MapPin, Cpu, Terminal, Github, Linkedin, Mail, Download, FileText, FileBadge, Search } from 'lucide-react';
+
+const LiveScanner = () => {
+  const getTime = () => {
+    const now = new Date();
+    return now.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true }).toLowerCase();
+  };
+
+  const [logs, setLogs] = useState([
+    `[${getTime()}] [system] > Initializing packet inspection... [OK]`,
+    `[${getTime()}] [network] > Detecting active nodes on subnet...`,
+    `[${getTime()}] [security] > Firewall rules synchronized.`
+  ]);
+
+  const lastIndexRef = useRef(-1);
+
+  useEffect(() => {
+    const messages = [
+      "[system] > Initializing packet inspection engine... [OK]",
+      "[network] > Detecting active nodes on subnet 192.168.1.0/24",
+      "[security] > Brute-force attempt blocked from IP: 45.122.3.10",
+      "[firewall] > Updating iptables: Dropping unauthorized SSH",
+      "[monitor] > High traffic volume detected on interface eth0",
+      "[system] > Memory integrity check: 0 errors found",
+      "[vulnerability] > Running Nmap scan... 42% complete",
+      "[tunnel] > Data Bridge connection established via secure WS",
+      "[auth] > Successful login: user 'rohit' from local terminal",
+      "[kernel] > Monitoring system entropy for crypto ops",
+      "[threat_intel] > Synchronizing global threat signatures... [DONE]",
+      "[heartbeat] > Node status: 0 packets dropped | Latency: 12ms"
+    ];
+
+    const interval = setInterval(() => {
+      let nextIndex;
+      do {
+        nextIndex = Math.floor(Math.random() * messages.length);
+      } while (nextIndex === lastIndexRef.current);
+      
+      lastIndexRef.current = nextIndex;
+      const timestamp = getTime();
+      const msg = messages[nextIndex];
+      
+      setLogs(prev => {
+        const newLogs = [...prev, `[${timestamp}] ${msg}`];
+        return newLogs.slice(-5);
+      });
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="bg-black/40 border border-[#00ff41]/20 p-4 rounded-sm font-mono text-[11px] leading-relaxed shadow-[inset_0_0_20px_rgba(0,255,65,0.05)] mt-4">
+      <div className="flex items-center gap-2 mb-3 text-[#00ff41]/60 font-bold border-b border-[#00ff41]/10 pb-1">
+        <Search size={14} /> LIVE_TELEMETRY_FEED
+      </div>
+      <div className="space-y-1">
+        {logs.map((log, i) => (
+          <div key={i} className={`${i === logs.length - 1 ? 'text-[#00ff41]' : 'text-[#00ff41]/40'} transition-all duration-500`}>
+            {log}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const About = () => {
   return (
@@ -17,11 +83,19 @@ const About = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-7xl">
         
         {/* Hacker Status Header */}
-        <div className="mb-12 text-center">
-           <h2 className="text-4xl md:text-6xl font-mono font-black tracking-widest text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">
-             SYSTEM.IDENTITY
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-16 text-center"
+        >
+           <div className="inline-flex items-center justify-center bg-[var(--color-neon-pink)] text-black px-4 py-1 cyber-clip font-display font-bold uppercase tracking-widest text-xs mb-4 shadow-[0_0_15px_rgba(255,0,60,0.4)]">
+             USER_PROFILE: DEPLOYED
+           </div>
+           <h2 className="text-5xl lg:text-7xl font-display font-black text-white tracking-tighter uppercase">
+             SYSTEM <span className="text-[var(--color-neon-pink)]">IDENTITY</span>
            </h2>
-        </div>
+        </motion.div>
 
         {/* Matrix Terminal Container */}
         <motion.div 
@@ -122,10 +196,8 @@ const About = () => {
                    <br/><br/>
                    My journey involves deep diving into networking protocols, mastering scripting for system automation, and hunting vulnerabilities in web applications. I believe in relentless, hands-on learning—constantly testing my skills against real-world scenarios (in highly controlled environments, of course).
                  </p>
-                 <p className="pl-4 md:pl-6 italic text-[#555] mt-2 select-none">
-                   # Status: Active & Scanning for Opportunities ...
-                 </p>
-               </div>
+                  
+                </div>
 
                {/* Command 2: EDUCATION */}
                <div className="flex flex-col gap-4 relative">
@@ -156,6 +228,8 @@ const About = () => {
                     </div>
                  </div>
                </div>
+
+               <LiveScanner />
 
                {/* Command Prompt Idle */}
                <div className="flex items-center gap-2 mt-4">

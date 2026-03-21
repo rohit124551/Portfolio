@@ -43,6 +43,11 @@ function App() {
             <a href="#contact" className="text-[#00ff41] hover:bg-[#00ff41] hover:text-black transition-all px-3 py-1 cyber-clip border border-[#00ff41] shadow-[0_0_10px_rgba(0,255,65,0.4)]">Comms</a>
           </nav>
 
+          {/* System Status Indicator */}
+          <div className="hidden sm:block bg-[#00ff41]/10 border border-[#00ff41] px-3 py-1 rounded-sm text-[10px] animate-pulse font-mono tracking-widest text-[#00ff41] shadow-[0_0_10px_rgba(0,255,65,0.2)]">
+            SYSTEM_STATUS: ONLINE
+          </div>
+
         </header>
       </div>
 
