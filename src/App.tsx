@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Shield, RefreshCw, Activity, Cpu, Wifi, Clock } from 'lucide-react';
+import { Shield, Activity, Cpu, Wifi, Clock } from 'lucide-react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
