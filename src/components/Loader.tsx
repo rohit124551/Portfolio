@@ -60,9 +60,9 @@ const Loader = ({ onComplete }: LoaderProps) => {
             animate={{ opacity: 1, y: 0 }}
             className="mb-12 font-display font-black text-5xl md:text-7xl tracking-tighter uppercase relative select-none flex items-center justify-center gap-6"
           >
-            <span className="glitch text-glow-pink text-[var(--color-neon-pink)] drop-shadow-[0_0_15px_rgba(255,0,60,0.8)]" data-text="CYBER">CYBER</span>
+            <span className="glitch text-glow-pink text-[var(--color-neon-pink)] drop-shadow-[0_0_15px_rgba(255,0,60,0.8)]" data-text="">CYBER</span>
             <span className="text-[var(--color-outline)] font-light">|</span>
-            <span className="glitch text-glow-cyan text-[var(--color-neon-cyan)] drop-shadow-[0_0_15px_rgba(0,240,255,0.8)]" data-text="LINK">LINK</span>
+            <span className="glitch text-glow-cyan text-[var(--color-neon-cyan)] drop-shadow-[0_0_15px_rgba(0,240,255,0.8)]" data-text="">LINK</span>
           </motion.div>
 
           {/* Elaborate HUD Progress Bar */}

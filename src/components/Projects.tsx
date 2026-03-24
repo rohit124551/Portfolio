@@ -49,9 +49,9 @@ const Projects = () => {
               SECURITY ARCHITECTURES
             </div>
             <h2 className="text-5xl lg:text-7xl font-display font-black text-white tracking-tighter uppercase relative">
-              <span className="glitch text-glow-cyan" data-text="DEPLOYED">DEPLOYED</span>
+              {/* <span className="glitch text-glow-cyan" data-text="">DEPLOYED</span> */}
               <br/>
-              <span className="text-transparent" style={{ WebkitTextStroke: '1px var(--color-neon-cyan)' }}>ASSETS</span>
+              <span className="text-transparent" style={{ WebkitTextStroke: '1px var(--color-neon-cyan)' }}>PROJECTS</span>
             </h2>
           </div>
           <div className="hidden md:block w-32 h-2 bg-gradient-to-r from-[var(--color-neon-cyan)] to-transparent cyber-clip mb-4"></div>

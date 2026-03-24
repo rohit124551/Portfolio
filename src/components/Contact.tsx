@@ -20,7 +20,7 @@ const Contact = () => {
             COMMUNICATION PROTOCOL
           </div>
           <h2 className="text-5xl lg:text-7xl font-display font-black text-white tracking-tighter uppercase mb-4 relative">
-             SECURE <span className="glitch text-glow-pink" data-text="TRANSMISSION">TRANSMISSION</span>
+             SECURE <span className="glitch text-glow-pink" data-text="">TRANSMISSION</span>
           </h2>
           <p className="text-[var(--color-on-surface-variant)] max-w-2xl mx-auto font-mono text-sm tracking-widest px-4 border-l-2 border-r-2 border-[var(--color-neon-cyan)] py-2">
             INITIALIZE CONNECTION // WAITING FOR INPUT

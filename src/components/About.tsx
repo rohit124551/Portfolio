@@ -181,7 +181,7 @@ const About = () => {
              </div>
 
              {/* Terminal Body */}
-             <div className="p-8 lg:p-12 flex-1 flex flex-col gap-10 overflow-y-auto overflow-x-hidden" style={{ maxHeight: '800px'}}>
+             <div className="pt-4 pb-8 px-6 lg:pt-6 lg:pb-12 lg:px-12 flex-1 flex flex-col gap-8 overflow-y-auto overflow-x-hidden" style={{ maxHeight: '800px'}}>
                
                {/* Command 1: WHOAMI */}
                <div className="flex flex-col gap-4 relative">

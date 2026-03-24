@@ -26,7 +26,7 @@ const Skills = () => {
             WEAPONRY LOADOUT
           </div>
           <h2 className="text-5xl lg:text-7xl font-display font-black text-white tracking-tighter uppercase">
-            COMBAT <span className="text-[var(--color-neon-cyan)]">SUBSYSTEMS</span>
+             <span className="text-[var(--color-neon-cyan)]">SKILLS</span>
           </h2>
         </motion.div>
 
@@ -67,7 +67,7 @@ const Skills = () => {
               <Code className="w-5 h-5" />
             </div>
             
-            <h3 className="text-2xl font-display font-black text-white tracking-widest uppercase mt-16 mb-8 text-right group-hover:text-[var(--color-neon-yellow)]">Syntax</h3>
+            <h3 className="text-2xl font-display font-black text-white tracking-widest uppercase mt-16 mb-8 text-right group-hover:text-[var(--color-neon-yellow)]">PROGRAMMING Languages</h3>
 
             <div className="flex flex-col gap-2">
               {languages.map(skill => (
@@ -91,7 +91,7 @@ const Skills = () => {
               <Terminal className="w-5 h-5" />
             </div>
             
-            <h3 className="text-2xl font-display font-black text-white tracking-widest uppercase mt-16 mb-8 text-right group-hover:text-[var(--color-neon-cyan)]">Tooling</h3>
+            <h3 className="text-2xl font-display font-black text-white tracking-widest uppercase mt-16 mb-8 text-right group-hover:text-[var(--color-neon-cyan)]">Tools</h3>
 
             <div className="flex flex-col gap-2">
               {frameworks.map(skill => (

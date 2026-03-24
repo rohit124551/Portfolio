@@ -67,9 +67,9 @@ const Hero = () => {
             className="relative font-display font-black text-6xl md:text-[5rem] lg:text-[7rem] leading-[0.9] uppercase tracking-tighter"
           >
             <div className="flex flex-col">
-              <div className="glitch text-glow-pink text-[var(--color-neon-pink)]" data-text="ROHIT">ROHIT</div>
-              <div className="glitch text-glow-cyan text-[var(--color-neon-cyan)] ml-8 md:ml-16" data-text="KUMAR">KUMAR</div>
-              <div className="glitch text-glow-yellow text-[var(--color-neon-yellow)] ml-16 md:ml-32" data-text="RANJAN">RANJAN</div>
+              <div className="glitch text-glow-pink text-[var(--color-neon-pink)]" data-text="">ROHIT</div>
+              <div className="glitch text-glow-cyan text-[var(--color-neon-cyan)] ml-8 md:ml-16" data-text="">KUMAR</div>
+              <div className="glitch text-glow-yellow text-[var(--color-neon-yellow)] ml-16 md:ml-32" data-text="">RANJAN</div>
             </div>
           </motion.div>
 
