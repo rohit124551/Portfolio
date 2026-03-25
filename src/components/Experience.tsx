@@ -68,10 +68,21 @@ const Experience = () => {
                 </p>
               </div>
 
-              <div className="pt-6 flex flex-wrap gap-3 relative z-10">
-                <span className="text-xs font-display font-black uppercase text-black bg-[var(--color-neon-cyan)] hover:bg-white transition-colors cyber-clip px-4 py-1.5 shadow-[0_0_10px_rgba(0,240,255,0.3)]">BASH</span>
-                <span className="text-xs font-display font-black uppercase text-black bg-[var(--color-neon-yellow)] hover:bg-white transition-colors cyber-clip px-4 py-1.5 shadow-[0_0_10px_rgba(252,238,10,0.3)]">RHEL 8+</span>
-                <span className="text-xs font-display font-black uppercase text-black bg-[var(--color-neon-pink)] hover:bg-white transition-colors cyber-clip px-4 py-1.5 shadow-[0_0_10px_rgba(255,0,60,0.3)]">SYSADMIN</span>
+              <div className="pt-6 flex flex-wrap gap-3 relative z-10 items-center justify-between w-full">
+                <div className="flex flex-wrap gap-3">
+                  <span className="text-xs font-display font-black uppercase text-black bg-[var(--color-neon-cyan)] hover:bg-white transition-colors cyber-clip px-4 py-1.5 shadow-[0_0_10px_rgba(0,240,255,0.3)]">BASH</span>
+                  <span className="text-xs font-display font-black uppercase text-black bg-[var(--color-neon-yellow)] hover:bg-white transition-colors cyber-clip px-4 py-1.5 shadow-[0_0_10px_rgba(252,238,10,0.3)]">RHEL 8+</span>
+                  <span className="text-xs font-display font-black uppercase text-black bg-[var(--color-neon-pink)] hover:bg-white transition-colors cyber-clip px-4 py-1.5 shadow-[0_0_10px_rgba(255,0,60,0.3)]">SYSADMIN</span>
+                </div>
+                
+                <a 
+                  href="/trainingRHCSA.png" 
+                  target="_blank" 
+                  rel="noreferrer"
+                  className="text-[10px] font-mono font-bold text-[var(--color-neon-purple)] border border-[var(--color-neon-purple)] px-3 py-1 hover:bg-[var(--color-neon-purple)] hover:text-white transition-all shadow-[0_0_10px_rgba(176,38,255,0.2)] uppercase tracking-tighter"
+                >
+                  VIEW_CERTIFICATE
+                </a>
               </div>
             </div>
           </motion.div>

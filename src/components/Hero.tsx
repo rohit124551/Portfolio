@@ -79,11 +79,11 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-lg md:text-xl text-[var(--color-on-surface-variant)] max-w-xl font-mono mt-8 bg-black/60 p-4 border-l-4 border-[var(--color-neon-cyan)] shadow-[0_0_20px_rgba(0,240,255,0.1)] pointer-events-auto"
           >
-            I am <span className="text-white font-bold block mb-1">Rohit Kumar Ranjan</span>
-            <span className="flex items-center gap-2 text-xs md:text-sm font-bold text-[var(--color-neon-purple)] mb-3 tracking-widest uppercase drop-shadow-[0_0_5px_rgba(176,38,255,0.8)]">
+            {/* I am <span className="text-white font-bold block mb-1">Rohit Kumar Ranjan</span> */}
+            {/* <span className="flex items-center gap-2 text-xs md:text-sm font-bold text-[var(--color-neon-purple)] mb-3 tracking-widest uppercase drop-shadow-[0_0_5px_rgba(176,38,255,0.8)]">
               <MapPin className="w-4 h-4" /> Ahmedabad, Gujarat, India
-            </span>
-            Architecting impenetrable networks and hunting vulnerabilities in the neon grid. 
+            </span> */}
+            Cybersecurity Enthusiast & Security Researcher
           </motion.p>
 
           <motion.div
@@ -93,14 +93,19 @@ const Hero = () => {
             className="mt-12 flex flex-wrap gap-6 pointer-events-auto"
           >
             <a href="#projects" className="cyber-clip px-6 md:px-10 py-4 bg-[var(--color-neon-yellow)] text-black font-display font-black text-sm md:text-lg tracking-widest uppercase hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(252,238,10,0.6)]">
-              JACK_IN
+              PROJECTS
             </a>
 
             <a href="#contact" className="cyber-clip-reverse px-6 md:px-10 py-4 bg-transparent border-2 border-[var(--color-neon-cyan)] text-[var(--color-neon-cyan)] font-display font-black text-sm md:text-lg tracking-widest uppercase hover:bg-[var(--color-neon-cyan)] hover:text-black hover:shadow-[0_0_20px_rgba(0,240,255,0.6)] transition-all">
-              DATA_LINK
+              CONTACT
             </a>
 
-            <a href="#" download className="cyber-clip px-6 md:px-10 py-4 bg-[var(--color-neon-pink)] text-white font-display font-black text-sm md:text-lg tracking-widest uppercase hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(255,0,60,0.6)] flex items-center justify-center">
+            <a 
+              href="https://drive.google.com/drive/u/0/folders/1zCLNgwl5sGCUbEvJiSzaNYE1lh_nzfQg" 
+              target="_blank" 
+              rel="noreferrer" 
+              className="cyber-clip px-6 md:px-10 py-4 bg-[var(--color-neon-pink)] text-white font-display font-black text-sm md:text-lg tracking-widest uppercase hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(255,0,60,0.6)] flex items-center justify-center"
+            >
               GET_CV
             </a>
           </motion.div>

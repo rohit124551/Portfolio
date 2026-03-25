@@ -93,7 +93,8 @@ const About = () => {
              USER_PROFILE: DEPLOYED
            </div>
            <h2 className="text-5xl lg:text-7xl font-display font-black text-white tracking-tighter uppercase">
-             SYSTEM <span className="text-[var(--color-neon-pink)]">IDENTITY</span>
+             ABOUT.<span className="text-[var(--color-neon-pink)]">ME</span>  
+             {/* SYSTEM IDENTITY */}
            </h2>
         </motion.div>
 
@@ -137,7 +138,7 @@ const About = () => {
                </div>
                <div className="flex items-center gap-3 text-[#00ff41] font-mono text-sm">
                  <Cpu className="w-5 h-5 shrink-0" />
-                 <span>Network Defense & Auto</span>
+                 <span>Cybersecurity Enthusiast & Security Researcher</span>
                </div>
                <div className="flex items-center gap-3 text-[#00ff41] font-mono text-sm mt-2">
                  <Terminal className="w-5 h-5 shrink-0" />
@@ -159,7 +160,12 @@ const About = () => {
              </div>
 
              {/* Download Resume Button Matrix Style */}
-             <a href="#" download className="w-full flex items-center justify-center gap-3 py-4 border border-[#00ff41] text-[#00ff41] font-mono tracking-widest text-sm hover:bg-[#00ff41] hover:text-black transition-all hover:shadow-[0_0_20px_#00ff41] group">
+             <a 
+               href="https://drive.google.com/drive/u/0/folders/1zCLNgwl5sGCUbEvJiSzaNYE1lh_nzfQg" 
+               target="_blank" 
+               rel="noreferrer" 
+               className="w-full flex items-center justify-center gap-3 py-4 border border-[#00ff41] text-[#00ff41] font-mono tracking-widest text-sm hover:bg-[#00ff41] hover:text-black transition-all hover:shadow-[0_0_20px_#00ff41] group"
+             >
                <Download className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
                DOWNLOAD RESUME
              </a>

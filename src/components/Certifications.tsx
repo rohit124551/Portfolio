@@ -5,19 +5,19 @@ const Certifications = () => {
   const certifications = [
     {
       title: 'Red Hat System Administration II (RH134 - RHA)',
-      issuer: 'Red Hat — Certificate Link',
+      issuer: 'Red Hat — Verified Specialist',
       date: 'September 2025',
       type: 'VERIFIED',
       color: 'var(--color-neon-pink)',
-      img: '/cert-rh134.jpg'
+      img: '/REDHAT-2.png'
     },
     {
       title: 'Red Hat System Administration I (RH124 - RHA)',
-      issuer: 'Red Hat — Certificate Link',
+      issuer: 'Red Hat — Verified Specialist',
       date: 'September 2025',
       type: 'VERIFIED',
       color: 'var(--color-neon-cyan)',
-      img: '/cert-rh124.jpg'
+      img: '/REDHAT-1.png'
     },
     {
       title: 'CyberSec Symposium 2.0 (Conference Participation)',
@@ -25,7 +25,7 @@ const Certifications = () => {
       date: 'April 2024',
       type: 'VERIFIED',
       color: 'var(--color-neon-cyan)',
-      img: '/cert-cybersec-2.0.jpg'
+      img: '/Conference Participation.png'
     },
     {
       title: 'Republic of Cyber Sentinels CTF (RCSCTF24)',
@@ -33,7 +33,7 @@ const Certifications = () => {
       date: 'March 2024',
       type: 'VERIFIED',
       color: 'var(--color-neon-pink)',
-      img: '/cert-rcsetf24.jpg'
+      img: '/RCSCTF24.png'
     },
     {
       title: 'Cyber Sec Symposium: 12-Hour CTF Challenge',
@@ -41,7 +41,7 @@ const Certifications = () => {
       date: 'September 2023',
       type: 'VERIFIED',
       color: 'var(--color-neon-yellow)',
-      img: '/cert-ctf-12h.jpg'
+      img: '/12-Hour Capture the Flag.png'
     }
   ];
 
