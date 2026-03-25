@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { motion } from 'framer-motion';
-import { MapPin } from 'lucide-react';
 
 // Funky 3D Cyber Torus Background
 function CyberObject() {
