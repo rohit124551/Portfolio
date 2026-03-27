@@ -138,7 +138,7 @@ const About = () => {
                </div>
                <div className="flex items-center gap-3 text-[#00ff41] font-mono text-sm">
                  <Cpu className="w-5 h-5 shrink-0" />
-                 <span>Cybersecurity Enthusiast & Security Researcher</span>
+                 <span>Cybersecurity Enthusiast | Security Researcher | AI Automation</span>
                </div>
                <div className="flex items-center gap-3 text-[#00ff41] font-mono text-sm mt-2">
                  <Terminal className="w-5 h-5 shrink-0" />
@@ -198,7 +198,7 @@ const About = () => {
                  </div>
                  
                  <p className="text-gray-300 leading-relaxed max-w-2xl pl-4 md:pl-6 pt-2">
-                   I am Rohit Kumar Ranjan, a <span className="text-[#00ff41] font-bold">Cyber Security student</span> at Lovely Professional University with a passion for <span className="text-[#00ff41] font-bold">network defense</span> and secure coding. 
+                   I am Rohit Kumar Ranjan, a <span className="text-[#00ff41] font-bold">Cyber Security student</span> at Lovely Professional University with a passion for <span className="text-[#00ff41] font-bold">Security Research</span> and AI Automation. 
                    <br/><br/>
                    My journey involves deep diving into networking protocols, mastering scripting for system automation, and hunting vulnerabilities in web applications. I believe in relentless, hands-on learning—constantly testing my skills against real-world scenarios (in highly controlled environments, of course).
                  </p>

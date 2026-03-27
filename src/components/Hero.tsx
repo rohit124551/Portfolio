@@ -82,7 +82,7 @@ const Hero = () => {
             {/* <span className="flex items-center gap-2 text-xs md:text-sm font-bold text-[var(--color-neon-purple)] mb-3 tracking-widest uppercase drop-shadow-[0_0_5px_rgba(176,38,255,0.8)]">
               <MapPin className="w-4 h-4" /> Ahmedabad, Gujarat, India
             </span> */}
-            Cybersecurity Enthusiast & Security Researcher
+            Cybersecurity Enthusiast | Security Researcher | AI Automation
           </motion.p>
 
           <motion.div
