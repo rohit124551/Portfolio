@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Shield, Code, Terminal } from 'lucide-react';
 
 const Skills = () => {
-  const cybersecurity = ['Cybersecurity Fundamentals', 'Phishing & URL Analysis', 'Nmap', 'Wireshark', 'Tcpdump', 'Shodan', 'XSS', 'John the Ripper', 'PsTools (Forensics)', 'Network Traffic Analysis'];
+  const cybersecurity = ['Cybersecurity Fundamentals', 'Nmap', 'Wireshark', 'Tcpdump', 'Shodan', 'XSS', 'John the Ripper', 'PsTools (Forensics)', 'Network Traffic Analysis'];
   const languages = ['Python', 'JavaScript', 'C', 'HTML5', 'C++', 'JAVA', 'BASH'];
   const frameworks = ['Git', 'GitHub', 'Docker', 'Ubuntu Linux', 'Maven', 'Flask'];
 
