@@ -11,7 +11,7 @@ function CyberObject() {
     if (meshRef.current) {
       meshRef.current.rotation.x += delta * 0.2;
       meshRef.current.rotation.y += delta * 0.3;
-      
+
       // Floating effect
       meshRef.current.position.y = Math.sin(state.clock.elapsedTime) * 0.5;
     }
@@ -19,15 +19,15 @@ function CyberObject() {
 
   return (
     <group>
-       <mesh ref={meshRef} position={[0, 0, 0]}>
-         <torusKnotGeometry args={[2, 0.6, 128, 32]} />
-         <meshBasicMaterial color="#ff003c" wireframe={true} transparent opacity={0.3} />
-       </mesh>
-       <mesh rotation={[Math.PI / 2, 0, 0]}>
-         <planeGeometry args={[50, 50, 20, 20]} />
-         <meshBasicMaterial color="#00f0ff" wireframe={true} transparent opacity={0.15} />
-       </mesh>
-       <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
+      <mesh ref={meshRef} position={[0, 0, 0]}>
+        <torusKnotGeometry args={[2, 0.6, 128, 32]} />
+        <meshBasicMaterial color="#ff003c" wireframe={true} transparent opacity={0.3} />
+      </mesh>
+      <mesh rotation={[Math.PI / 2, 0, 0]}>
+        <planeGeometry args={[50, 50, 20, 20]} />
+        <meshBasicMaterial color="#00f0ff" wireframe={true} transparent opacity={0.15} />
+      </mesh>
+      <OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
     </group>
   );
 }
@@ -35,7 +35,7 @@ function CyberObject() {
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-[90vh] w-full flex flex-col items-center justify-center overflow-hidden">
-      
+
       {/* 3D Canvas Layer */}
       <div className="absolute inset-0 z-0 opacity-80 mix-blend-screen pointer-events-auto">
         <Canvas camera={{ position: [0, 2, 7], fov: 60 }}>
@@ -47,7 +47,7 @@ const Hero = () => {
 
         {/* Cyberpunk Text Content */}
         <div className="flex-1 text-left flex flex-col items-start relative pb-12">
-          
+
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -99,10 +99,10 @@ const Hero = () => {
               CONTACT
             </a>
 
-            <a 
-              href="https://drive.google.com/drive/u/0/folders/1zCLNgwl5sGCUbEvJiSzaNYE1lh_nzfQg" 
-              target="_blank" 
-              rel="noreferrer" 
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1zCLNgwl5sGCUbEvJiSzaNYE1lh_nzfQg"
+              target="_blank"
+              rel="noreferrer"
               className="cyber-clip px-6 md:px-10 py-4 bg-[var(--color-neon-pink)] text-white font-display font-black text-sm md:text-lg tracking-widest uppercase hover:bg-white hover:text-black transition-all shadow-[0_0_20px_rgba(255,0,60,0.6)] flex items-center justify-center"
             >
               GET_CV
@@ -120,32 +120,32 @@ const Hero = () => {
           {/* Cyberpunk Frames */}
           <div className="absolute inset-0 cyber-clip bg-[var(--color-neon-pink)]/20 shadow-[0_0_30px_rgba(255,0,60,0.4)] animate-pulse"></div>
           <div className="absolute inset-2 cyber-clip-reverse border-2 border-[var(--color-neon-cyan)] z-10"></div>
-          
+
           <div className="absolute inset-4 cyber-clip overflow-hidden bg-[var(--color-surface-container-high)] z-20">
-             <img
-                src="/Prof-Rohit.jpg"
-                alt="Rohit Kumar Ranjan"
-                className="w-full h-full object-cover transition-all duration-700"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = 'https://picsum.photos/600/800?blur=2';
-                }}
-              />
-              {/* Subtle Scanline overlay */}
-              <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPjxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjMiIGZpbGw9Im5vbmUiLz48cmVjdCB5PSIzIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSJyZ2JhKDAsIDI0MCwgMjU1LCAwLjA1KSIvPjwvc3ZnPg==')] pointer-events-none mix-blend-screen opacity-30"></div>
+            <img
+              src="/Prof-Rohit.jpg"
+              alt="Rohit Kumar Ranjan"
+              className="w-full h-full object-cover transition-all duration-700"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = 'https://picsum.photos/600/800?blur=2';
+              }}
+            />
+            {/* Subtle Scanline overlay */}
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPjxyZWN0IHdpZHRoPSI0IiBoZWlnaHQ9IjMiIGZpbGw9Im5vbmUiLz48cmVjdCB5PSIzIiB3aWR0aD0iNCIgaGVpZ2h0PSIxIiBmaWxsPSJyZ2JhKDAsIDI0MCwgMjU1LCAwLjA1KSIvPjwvc3ZnPg==')] pointer-events-none mix-blend-screen opacity-30"></div>
           </div>
-          
+
           {/* Neon decorative boxes */}
           <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[var(--color-neon-yellow)] cyber-clip-reverse z-30 flex items-center justify-center shadow-[0_0_20px_rgba(252,238,10,0.5)]">
-             <span className="font-display font-black text-black text-2xl">LPU</span>
+            <span className="font-display font-black text-black text-2xl">LPU</span>
           </div>
           <div className="absolute top-10 -left-6 bg-black border border-[var(--color-neon-pink)] px-4 py-1 z-30 font-mono text-[var(--color-neon-pink)] text-xs tracking-widest uppercase">
-             RHCSA // VALID
+            RHCSA // VALID
           </div>
         </motion.div>
 
       </div>
-      
+
       {/* Floor glow */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[var(--color-neon-pink)]/20 to-transparent pointer-events-none mix-blend-screen"></div>
     </section>
