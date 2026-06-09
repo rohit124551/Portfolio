@@ -86,7 +86,7 @@ const Certifications = () => {
                 <div className="absolute -right-10 -top-10 w-32 h-32 bg-gradient-to-bl from-white/5 to-transparent rounded-full blur-2xl"></div>
 
                 <div className="w-full h-40 bg-black/60 border border-dashed border-[var(--color-outline)] mb-8 flex items-center justify-center relative overflow-hidden group-hover:border-white transition-colors">
-                   <img src={cert.img} alt={cert.title} className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity mix-blend-screen" onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x400/111/333?text=CERTIFICATE+DATA+PENDING' }} />
+                   <img src={cert.img} alt={cert.title} loading="lazy" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity mix-blend-screen" onError={(e) => { (e.target as HTMLImageElement).src = 'https://placehold.co/600x400/111/333?text=CERTIFICATE+DATA+PENDING' }} />
                 </div>
 
                 <div className="w-12 h-12 flex items-center justify-center mb-6 bg-black border" style={{ borderColor: cert.color }}>

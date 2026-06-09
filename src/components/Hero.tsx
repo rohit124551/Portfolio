@@ -124,7 +124,7 @@ const Hero = () => {
           <div className="absolute inset-4 cyber-clip overflow-hidden bg-[var(--color-surface-container-high)] z-20">
             <img
               src="/Prof-Rohit.jpg"
-              alt="Rohit Kumar Ranjan"
+              alt="Rohit Kumar Ranjan - Cybersecurity Student Profile Photo"
               className="w-full h-full object-cover transition-all duration-700"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;

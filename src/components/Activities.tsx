@@ -58,7 +58,7 @@ const Activities = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-white/5 opacity-0 group-hover:opacity-100 transition-opacity cyber-clip"></div>
 
                 {act.title === 'E-Cell, LPU' && (
-                  <img src="/ecell-logo.png" alt="E-Cell LPU Logo" className="w-16 h-16 object-contain mb-6 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
+                  <img src="/ecell-logo.png" alt="E-Cell LPU Logo" loading="lazy" className="w-16 h-16 object-contain mb-6 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                 )}
 
                 <h3 className="text-3xl md:text-4xl font-display font-black text-white tracking-wider uppercase mb-8 pb-4 border-b border-dashed border-[var(--color-outline)] text-center md:text-left">

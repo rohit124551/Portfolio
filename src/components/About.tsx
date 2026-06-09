@@ -115,7 +115,7 @@ const About = () => {
              <div className="relative w-48 h-48 mb-8">
                <div className="absolute inset-0 bg-[#00ff41] blur-md opacity-20 animate-pulse pointer-events-none"></div>
                <div className="absolute inset-0 flex items-center justify-center" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'}}>
-                  <img src="/cyber-avatar.png" alt="Rohit - Cyber Avatar" className="w-full h-full object-cover" />
+                  <img src="/cyber-avatar.png" alt="Rohit Kumar Ranjan - Cyber Avatar Image" loading="lazy" className="w-full h-full object-cover" />
                </div>
                
                {/* Hexagon Outline */}
@@ -149,11 +149,11 @@ const About = () => {
              {/* Social Links Matrix Style */}
              <div className="flex gap-4 mt-8 mb-10 w-full justify-center">
                 {[
-                  { icon: <Github className="w-5 h-5"/>, link: 'https://github.com/rohit124551' },
-                  { icon: <Linkedin className="w-5 h-5"/>, link: 'https://linkedin.com/in/rohitkumarranjan/' },
-                  { icon: <Mail className="w-5 h-5"/>, link: 'mailto:rohit124551@gmail.com' }
+                  { icon: <Github className="w-5 h-5"/>, link: 'https://github.com/rohit124551', label: 'GitHub Profile' },
+                  { icon: <Linkedin className="w-5 h-5"/>, link: 'https://linkedin.com/in/rohitkumarranjan/', label: 'LinkedIn Profile' },
+                  { icon: <Mail className="w-5 h-5"/>, link: 'mailto:rohit124551@gmail.com', label: 'Email Contact' }
                 ].map((s, i) => (
-                  <a key={i} href={s.link} target="_blank" rel="noreferrer" className="w-12 h-12 flex items-center justify-center border border-[#00ff41] text-[#00ff41] hover:bg-[#00ff41] hover:text-black transition-colors rounded-sm shadow-[0_0_10px_rgba(0,255,65,0.2)]">
+                  <a key={i} aria-label={s.label} href={s.link} target="_blank" rel="noreferrer" className="w-12 h-12 flex items-center justify-center border border-[#00ff41] text-[#00ff41] hover:bg-[#00ff41] hover:text-black transition-colors rounded-sm shadow-[0_0_10px_rgba(0,255,65,0.2)]">
                     {s.icon}
                   </a>
                 ))}
